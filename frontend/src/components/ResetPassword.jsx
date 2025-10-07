@@ -58,9 +58,8 @@ const ResetPassword = ({ email, onCancel }) => {
             <button
   type="submit"
   disabled={loading}
-  className={`bg-[#7a7deb] text-white py-2 rounded-full hover:bg-[#6366f1] transition ${
-    loading ? "opacity-50 cursor-not-allowed" : ""
-  }`}
+  className={`bg-[#7a7deb] text-white py-2 rounded-full hover:bg-[#6366f1] transition ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+  
 >
   {loading ? "Sending..." : "Send"}
 </button>
