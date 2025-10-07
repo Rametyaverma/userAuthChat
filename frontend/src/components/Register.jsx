@@ -53,7 +53,7 @@ const Register = ({ onSwitch }) => {
         }
         setUsernameLoading(true);
         try {
-            const res = await fetch(`${https://userauthchat-6.onrender.com}/api/check-username/${value}`);
+            const res = await fetch(`https://userauthchat-6.onrender.com/api/check-username/${value}`);
             const data = await res.json();
             setUsernameAvailable(data.available);
         } catch (error) {
@@ -74,7 +74,7 @@ const Register = ({ onSwitch }) => {
         }
         setEmailLoading(true);
         try {
-            const res = await fetch(`${https://userauthchat-6.onrender.com/}api/check-email/${value}`);
+            const res = await fetch(`https://userauthchat-6.onrender.com/api/check-email/${value}`);
             const data = await res.json();
             setEmailAvailable(data.available);
         } catch (error) {
@@ -169,7 +169,7 @@ const Register = ({ onSwitch }) => {
         };
         // 👉 Send data to backend to create user & send OTP
         try {
-            const res = await fetch(`${https://userauthchat-6.onrender.com/}api/auth/register`, {
+            const res = await fetch(`https://userauthchat-6.onrender.com/api/auth/register`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(finalFormData),
@@ -197,7 +197,7 @@ const Register = ({ onSwitch }) => {
     };
 
     const handleOtpVerify = async (otpCode) => {
-        const res = await fetch(`${https://userauthchat-6.onrender.com/}api/auth/verify-otp`, {
+        const res = await fetch(`https://userauthchat-6.onrender.com/api/auth/verify-otp`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email: userEmail, otp: otpCode }),
