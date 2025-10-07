@@ -14,7 +14,7 @@ const ResetPassword = ({ email, onCancel }) => {
         }
         setLoading(true);
         try {
-            const res = await fetch(`${https://userauthchat-6.onrender.com/}api/auth/forgot-password/reset, {
+            const res = await fetch(`https://userauthchat-6.onrender.com/api/auth/forgot-password/reset, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email: email.trim(), newPassword: newPassword.trim() }),
