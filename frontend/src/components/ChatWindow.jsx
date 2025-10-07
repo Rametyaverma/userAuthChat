@@ -3,7 +3,7 @@ import MessageInput from "./MessageInput";
 import { io } from "socket.io-client";
 import Profile from "./Profile";
 
-const socket = io(`${https://userauthchat-6.onrender.com/}`);
+const socket = io(`${https://userauthchat-6.onrender.com}`);
 
 export default function ChatWindow({ selectedContact,loggedInUser }) {
 
