@@ -39,7 +39,7 @@ const ResetOTPVerification = ({ email, onVerified, onCancel }) => {
     setLoading(true);
     try {
       const res = await fetch(
-        `${https://userauthchat-6.onrender.com/}api/auth/forgot-password/verify-otp`,
+        `https://userauthchat-6.onrender.com/api/auth/forgot-password/verify-otp`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
