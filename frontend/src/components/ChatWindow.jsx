@@ -3,7 +3,7 @@ import MessageInput from "./MessageInput";
 import { io } from "socket.io-client";
 import Profile from "./Profile";
 
-const socket = io("http://localhost:5000");
+const socket = io(`${https://userauthchat-6.onrender.com/}`);
 
 export default function ChatWindow({ selectedContact,loggedInUser }) {
 
@@ -32,7 +32,7 @@ export default function ChatWindow({ selectedContact,loggedInUser }) {
 
       try {
         const res = await fetch(
-          `http://localhost:5000/messages/${selectedContact._id}`,
+          `${https://userauthchat-6.onrender.com}/messages/${selectedContact._id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -56,7 +56,7 @@ export default function ChatWindow({ selectedContact,loggedInUser }) {
       if (!token) return;
 
       try {
-        const res = await fetch("http://localhost:5000/api/allusers/contacts", {
+        const res = await fetch(`${https://userauthchat-6.onrender.com}`/api/allusers/contacts", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
