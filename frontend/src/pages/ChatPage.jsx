@@ -28,7 +28,7 @@ export default function ChatPage() {
     if (!token) return;
 
     try {
-      const res = await fetch("http://localhost:5000/conversations", {
+      const res = await fetch(`${https://userauthchat-6.onrender.com/}conversations`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export default function ChatPage() {
       if (!token) return;
 
       try {
-        const res = await fetch("http://localhost:5000/api/allusers/contacts", {
+        const res = await fetch(`${https://userauthchat-6.onrender.com/}api/allusers/contacts`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
