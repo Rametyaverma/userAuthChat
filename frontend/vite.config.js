@@ -6,4 +6,9 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js',
   },
+  server: {
+    proxy: {
+      '/api': 'https://userauthchat-6.onrender.com/', // your Render URL
+    },
+  },
 })
