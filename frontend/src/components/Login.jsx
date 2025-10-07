@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import laptop from "../assets/other03.svg";
-import shape from "../assets/rectangle5.svg";
+import laptop from "../assets/Other03.svg";
+import shape from "../assets/Rectangle5.svg";
 import ForgotPassword from "./ForgotPassword";
 
 const Login = ({ onLogin }) => {
