@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useCallback } from "react";
-import rectangle6 from "../assets/rectangle6.svg";
-import rectangle1 from "../assets/rectangle1.svg";
+import rectangle6 from "../assets/Rectangle6.svg";
+import rectangle1 from "../assets/Rectangle1.svg";
 import laptop2 from "../assets/Other07reg.svg";
 import OtpVerification from "./OtpVerification";
 
