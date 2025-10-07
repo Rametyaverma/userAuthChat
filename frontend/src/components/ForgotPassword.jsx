@@ -14,7 +14,7 @@ const ForgotPassword = ({ onCancel }) => {
         setLoading(true);
 
         try {
-            const res = await fetch(`${https://userauthchat-6.onrender.com}/api/auth/forgot-password/send-otp`, {
+            const res = await fetch(`https://userauthchat-6.onrender.com/api/auth/forgot-password/send-otp`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email: email.trim() }),
